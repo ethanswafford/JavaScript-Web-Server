@@ -1,1 +1,0 @@
-# JavaScript-Web-Server a simple host server for the browser to serve web content like Kaboom.JS games that I want to   make and share with friends and collegues and also use for portfolio and resume based reasons  and also a nice and easy little practice/exercise to keep my knowledge of JS fresh. 
