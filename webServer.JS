@@ -1,12 +1,16 @@
+//variable declarations and required modules
+
 const webpack = require('webpack');
 const config = require('./webpack.config');
 const compiler = webpack(config);
-const app = new (require('express'))();
+const app = new(require('express'))();
 const port = 8080;
 
-app.use(require('webpack-dev-middleware')(compiler, { 
-    noInfo: true, 
-    publicPath: config.output.publicPath 
+// begin building the server 
+
+app.use(require('webpack-dev-middleware')(compiler, {
+    noInfo: true,
+    publicPath: config.output.publicPath
 }));
 
 app.use(require('webpack-hot-middleware')(compiler));
